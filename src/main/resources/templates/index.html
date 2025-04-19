@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Página Inicial</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            border: 1px red solid;
+
+            & .logo {
+                width: 10%;
+            }
+            & .barra-pesquisa{
+                width: 80%;
+
+                & input{
+                    width: 100%;
+                }
+            }
+            & .opcoes-usuario{
+                width: 10%;
+            }
+        }
+
+        header{
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            border: 1px green solid;
+        }
+
+        .catalogo{
+            width: 80%;
+            height: 800px;
+            margin: auto;
+            margin-top: 50px;
+
+            border: 1px blue solid;
+
+            & .card{
+                width: 15%;
+                height: 300px;
+                margin: 10px 10px 10px 10px;
+
+                border: 1px black solid;
+
+                & img{
+                    width: 100%;
+                    height: 200px;
+
+                    border: 1px orange solid;
+                }
+            }
+        }
+
+        footer{
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 200px;
+
+            border: 1px yellow solid;
+
+            & .section{
+                width: 33%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Sistema de e-commerce</h1>
+        </div>
+        <div class="barra-pesquisa">
+            <input type="text">
+        </div>
+        <div class="opcoes-usuario">
+            <a href="" class="carrinho">Carrinho</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Recomendações</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab optio, repellat adipisci possimus distinctio nemo nostrum harum quod impedit voluptatibus voluptatum aperiam aliquid, excepturi ducimus maiores dolor laudantium non corporis!</p>
+    </header>
+
+    <section class="catalogo">
+        <div class="card">
+            <img src="" alt="" class="foto">
+            <div class="titulo">
+                Produto Show
+            </div>
+            <div class="preco">
+                R$ 20000,99
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section">
+            <h3>Conheça-nos</h3>
+            
+            <div class="links">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Código Fonte</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Categorias</h3>
+            
+            <div>
+                <li><a href="">Categoria</a></li>
+                <li><a href="">Categoria</a></li>
+                <li><a href="">Categoria</a></li>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Pagamentos</h3>
+            
+            <div>
+                <li><a href="">Forma de Pagamento</a></li>
+                <li><a href="">Forma de Pagamento</a></li>
+                <li><a href="">Forma de Pagamento</a></li>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
